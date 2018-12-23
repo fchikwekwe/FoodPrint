@@ -639,6 +639,21 @@ body {
 }
 
 /** Food Index */
+.food-index {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 250px;
+    margin-right: 200px;
+}
+
+.food-index input {
+    width: 100px;
+}
+
+#food-select {
+    height: 35px;
+    width: 300px;
+}
+
 #food-submit {
     margin-left: 10px;
     margin-right: 10px;
@@ -650,7 +665,7 @@ body {
     display: inline-block;
 }
 
-#search-function {
+.title-highlight {
     text-align: center;
     font-weight: 200;
     color: #0a8df3;

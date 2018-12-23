@@ -1,40 +1,41 @@
 <div class="food-index">
-    <legend>Add Food</legend>
+    <legend>Edit Food Items</legend>
 
-    <form action="/profiles/{{profile._id}}?_method=PUT" method="POST">
-        <div class="input-group">
-            <!-- <h3 class="title-highlight">Search function coming soon!</h3> -->
-           <!-- <input type="text" class="form-control" id="search" type="search" name="search" placeholder="Look up food here">
-           <span class="input-group-btn">
-                <a href="/profiles">
-                  <button class="btn btn-primary" type="button">Search</button>
-                </a>
-           </span> -->
-        </div>
-
-        <h3 class="title-highlight">Select your food below!</h3>
+    <form method="POST" action="/profiles/{{profile.id}}/delete?_method=PUT">
+    <!-- Search feature coming soon
+    <div class="input-group">
+    <input type="text" class="form-control" id="search" type="search" name="search" placeholder="Look up food here">
+    <span class="input-group-btn">
+        <a href="/profiles">
+          <button class="btn btn-primary" type="button">Search</button>
+        </a>
+    </span>
+    </div>
+    -->
+        <h3 class="title-highlight">Select the food you want to delete!</h3>
         <br>
         <br>
         <select id="food-select" name="foodSelect">
-                {{#each foods}}
+                {{#each profile.foods}}
                 <option value="{{this._id}}">
                     {{this.name}}, {{this.description}}, {{this.CO2e}}
                 </option>
                 {{else}}
                 <option value="">
-                    No food yet...
+                    Nothing to delete yet...
                 </option>
                 {{/each}}
         </select>
         <br>
         <br>
+
         <div class="container-fluid pull-right">
             <!-- Submit and Cancel Buttons -->
             <div id="food-submit" class="row">
                 <a href="/profiles/{{profile.id}}">
                     <input class="login login-submit" value="Cancel">
                 </a>
-                <input class="login login-submit" type="submit" value="Submit">
+                <input class="login login-submit" type="submit" value="Delete">
             </div>
         </div>
     </form>

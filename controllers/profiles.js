@@ -45,7 +45,7 @@ module.exports = (app) => {
           .then((food) => {
               console.log(food)
               Profile.findByIdAndUpdate(req.params.id,
-              {$pull: { foods: food }},
+              {$pull: { food: foods }},
               { safe: true, upsert: true })
               .then(profile => {
                   // console.log(profile.foods)
@@ -61,7 +61,7 @@ module.exports = (app) => {
         .then((profile) => {
             Food.find()
             .then((foods) => {
-                res.render('edit-index', {
+                res.render('delete-index', {
                     currentUser,
                     profile: profile,
                     foods: foods
