@@ -25,12 +25,14 @@ module.exports = (app) => {
     // UPDATE and ADD FOOD
     app.put('/profiles/:id', (req, res) => {
         const query = req.body.foodSelect
+
         Food.findById(query)
         .then((food) => {
           Profile.findByIdAndUpdate(req.params.id,
-          {$push: { foods: food }})
+          {$push: { foods: food }},
+          {$inc: { 'food.__v': 1 }})
             .then(profile => {
-                console.log(profile)
+                console.log(food);
                 res.redirect(`/profiles/${profile._id}`)
                 });
             }).catch((err) => {
@@ -40,17 +42,19 @@ module.exports = (app) => {
       // UPDATE and REMOVE FOOD
       app.put('/profiles/:id/delete', (req, res) => {
           const query = req.body.foodSelect
-          console.log(req.body)
           Food.findById(query)
           .then((food) => {
-              console.log(food)
+              // console.log(food)
               Profile.findByIdAndUpdate(req.params.id,
-              {$pull: { food: foods }},
+              {$pull: { foods: food }},
               { safe: true, upsert: true })
               .then(profile => {
-                  // console.log(profile.foods)
+                  console.log(food)
                   res.redirect(`/profiles/${profile._id}`)
-              });
+              })
+              .catch((err) => {
+                  console.log(err.message);
+              })
           });
       });
 
@@ -65,6 +69,9 @@ module.exports = (app) => {
                     currentUser,
                     profile: profile,
                     foods: foods
+                })
+                .catch((err) => {
+                    console.log(err.message);
                 })
             });
         });

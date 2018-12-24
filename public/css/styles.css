@@ -149,6 +149,71 @@ html, body {
     box-shadow: 2px 18px 70px 0px #9D9D9D;
 }
 
+h1 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    height: 1px;
+    border-color: #fff;
+}
+
+p {
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.cta {
+    height: 80px;
+    width: 100px;
+    margin-right: 15%;
+    margin-top: 5%;
+    float: right;
+}
+
+button {
+    height: 80px;
+    width: 100px;
+    float: right;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn {
+    width: 80px;
+    height: 40px;
+    background-color: #fbfbfb;
+    color: #0a8df3;
+    transition: width 0.3s ease-in;
+}
+
+button:hover {
+    color: #38ab07;
+    transition: color 0.3s ease-in;
+}
+
+.cta:hover .btn {
+    width: 100px;
+    background-color: #fff;
+    color: #38ab07;
+}
+
+/** All the circles */
+
 .circle-left-small {
     height: 120px;
     width: 120px;
@@ -448,69 +513,6 @@ html, body {
     font-weight: bold;
 }
 
-h1 {
-    font-size: 42px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-hr {
-    width: 50%;
-    float: left;
-    background-color: #fff;
-    height: 1px;
-    border-color: #fff;
-}
-
-p {
-    margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-a {
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-.cta {
-    height: 80px;
-    width: 100px;
-    margin-right: 15%;
-    margin-top: 5%;
-    float: right;
-}
-
-button {
-    height: 80px;
-    width: 100px;
-    float: right;
-    cursor: pointer;
-    background: none;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    font-weight: bolder;
-    font-size: 16px;
-    outline: none;
-}
-
-.btn {
-    width: 80px;
-    height: 40px;
-    background-color: #fbfbfb;
-    color: #0a8df3;
-    transition: width 0.3s ease-in;
-}
-
-button:hover {
-    color: #38ab07;
-    transition: color 0.3s ease-in;
-}
-
-.cta:hover .btn {
-    width: 100px;
-    background-color: #fff;
-    color: #38ab07;
-}
-
 /** Login Styles */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 
@@ -638,6 +640,15 @@ body {
     text-decoration: underline;
 }
 
+#delete-profile {
+    background-color: red;
+}
+
+#profile-buttons {
+    position: absolute;
+    left: 67%;
+}
+
 /** Food Index */
 .food-index {
     font-family: 'Montserrat', sans-serif;
@@ -652,11 +663,15 @@ body {
 #food-select {
     height: 35px;
     width: 300px;
+    position: absolute;
+    left: 40%;
 }
 
 #food-submit {
     margin-left: 10px;
     margin-right: 10px;
+    position: absolute;
+    left: 47.5%;
 }
 
 .divider {
