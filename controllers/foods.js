@@ -1,5 +1,5 @@
 /*
-* Foods routes
+* Foods
 */
 
 const Food = require('../models/food');
@@ -10,28 +10,28 @@ module.exports = (app) => {
     app.get('/profiles/:id/foods', (req, res) => {
         const currentUser = req.profile;
         Profile.findById(req.params.id)
-        .then(profile => {
-            Food.find({})
-            .then((foods) => {
-                res.render('food-index', {
-                    profile: profile,
-                    foods: foods,
-                    currentUser
-                });
-            }).catch((err) => {
-                console.log(err.message);
+            .then((profile) => {
+                Food.find({})
+                    .then((foods) => {
+                        res.render('food-index', {
+                            profile,
+                            foods,
+                            currentUser,
+                        });
+                    }).catch((err) => {
+                        console.log(err.message);
+                    });
             });
-        });
     });
 
     // CREATE FOOD
-    app.post('/profiles/:id/foods', (req, res) =>{
+    app.post('/profiles/:id/foods', (req, res) => {
         Food.create(req.body)
-            .then((food) =>{
+            .then(() => {
                 res.redirect(`/profiles/${req.params.id}/foods`);
             })
-            .catch((err) =>{
+            .catch((err) => {
                 console.log(err.message);
-            })
+            });
     });
-}
+};

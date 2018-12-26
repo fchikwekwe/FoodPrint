@@ -20,7 +20,7 @@ const checkAuth = (req, res, next) => {
         req.profile = decodedToken.payload;
     }
     next();
-}
+};
 
 /** Instantiate server */
 const app = express();
@@ -28,11 +28,12 @@ const PORT = process.env.PORT || 3000;
 
 /** Database connection */
 const mongoose = require('mongoose');
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/envi', { useNewUrlParser: true });
-let db = mongoose.connection;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-    console.log('Database connected successfully.')
+    console.log('Database connected successfully.');
 });
 
 /** Middleware */
@@ -52,7 +53,7 @@ require('./controllers/auth.js')(app);
 
 /** Port listener */
 app.listen(PORT, () => {
-    console.log('Envi App listening on port', PORT)
-})
+    console.log('Envi App listening on port', PORT);
+});
 
 module.exports = app;

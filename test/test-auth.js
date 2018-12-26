@@ -24,30 +24,30 @@ describe('Auth', () => {
     it('should be able to signup', (done) => {
         Profile.findOneAndRemove({ username: 'testone' }, () => {
             agent.post('/sign-up')
-            .send({
-                username: 'testone',
-                password: 'password'
-            })
-            .end((err, res) => {
-                console.log(res.body);
-                res.should.have.status(200);
-                expect(agent).to.have.cookie('nToken');
-                done();
-            });
+                .send({
+                    username: 'testone',
+                    password: 'password',
+                })
+                .end((err, res) => {
+                    console.log(res.body);
+                    res.should.have.status(200);
+                    expect(agent).to.have.cookie('nToken');
+                    done();
+                });
         });
     });
 
     it('should be able to login', (done) => {
         agent.post('/login')
-        .send({
-            username: 'testone',
-            password: 'password'
-        })
-        .end(function(err, res) {
-            res.should.have.status(200);
-            expect(agent).to.have.cookie('nToken');
-            done();
-        });
+            .send({
+                username: 'testone',
+                password: 'password',
+            })
+            .end(function(err, res) {
+                res.should.have.status(200);
+                expect(agent).to.have.cookie('nToken');
+                done();
+            });
     });
 
     it('should be able to logout', (done) => {

@@ -1,27 +1,28 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+
 const Schema = mongoose.Schema;
 
 const ProfileSchema = new Schema({
     createdAt: {
-        type: Date
+        type: Date,
     },
     updatedAt: {
-        type: Date
+        type: Date,
     },
     username: {
         type: String,
-        required: true
+        required: true,
     },
     password: {
         type: String,
         select: false,
-        required: true
+        required: true,
     },
-    foods: Array
+    foods: Array,
 });
 
-ProfileSchema.pre('save', function(next) {
+ProfileSchema.pre('save', function (next) {
     // SET createdAt and updatedAt
     const now = new Date();
     this.updatedAt = now;
@@ -43,7 +44,7 @@ ProfileSchema.pre('save', function(next) {
 });
 
 // Need to use function to enable this.password to work
-ProfileSchema.methods.comparePassword = function(password, done) {
+ProfileSchema.methods.comparePassword = function (password, done) {
     bcrypt.compare(password, this.password, (err, isMatch) => {
         done(err, isMatch);
     });
