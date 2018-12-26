@@ -1,7 +1,7 @@
 {
   "name": "environment_app",
   "version": "1.0.0",
-  "description": "Have you ever wanted to improve your overall carbon output, but were not sure how to do it?",
+  "description": "Track your carbon output from your food intake. Join FoodPrint!",
   "main": "app.js",
   "scripts": {
     "test": "mocha --exit test/*",

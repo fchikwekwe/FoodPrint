@@ -1,9 +1,9 @@
 
 /** Navbar Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #fff;
 }
 
 small {
@@ -34,6 +34,10 @@ h2 {
     text-align: center;
 }
 
+.hidden-nav {
+    display: none;
+}
+
 section {
     height: 100vh;
 }
@@ -43,15 +47,17 @@ nav {
     margin: 0 auto;
     background: #fff;
     box-shadow: 0px 5px 0px #dedede;
-    opacity: 0.7;
 }
+
 nav ul {
     list-style: none;
     text-align: center;
 }
+
 nav ul li {
     display: inline-block;
 }
+
 nav ul li a {
     display: block;
     padding: 15px;
@@ -61,14 +67,47 @@ nav ul li a {
     text-transform: uppercase;
     margin: 0 10px;
 }
+
+.hamburger .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger li a {
+        display: none;
+    }
+    .hamburger li a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger.responsive {
+        position: relative;
+    }
+    .hamburger.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .hamburger.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
     transition: all .5s;
 }
+
 nav ul li a:hover {
     color: #0a8df3;
 }
+
 
 /* Navbar Fill Effects */
 
@@ -88,6 +127,7 @@ nav.fill ul li a:after {
     background: #aaa;
     height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
     width: 100%;
 }
@@ -102,10 +142,12 @@ nav.fill ul li a:after {
     margin: 0;
     opacity: 0;
 }
+
 nav.fill ul li a:hover {
     color: #fff;
     z-index: 1;
 }
+
 nav.fill ul li a:hover:after {
     z-index: -10;
     animation: fill 1s forwards;
@@ -148,6 +190,25 @@ html, body {
     background: #fbfbfb;
     box-shadow: 2px 18px 70px 0px #9D9D9D;
 }
+@media(max-width: 1000px) {
+    .container {
+        width: 800px;
+        height: 600px;
+    }
+}
+@media(max-width: 768px) {
+    .container {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 300px;
+        height: 500px;
+    }
+}
 
 h1 {
     font-size: 42px;
@@ -178,6 +239,18 @@ a {
     margin-right: 15%;
     margin-top: 5%;
     float: right;
+}
+
+@media(max-width: 768px) {
+    .cta {
+        margin-right: 5%;
+    }
+}
+
+@media(max-width: 500px) {
+    .cta {
+        margin-right: 50px;
+    }
 }
 
 button {
@@ -224,6 +297,18 @@ button:hover {
     border-radius: 50%;
     opacity: 0.7;
     z-index: 1;
+}
+@media(max-width: 768px) {
+    .circle-left-small {
+        top: 0px;
+        left: -10px;
+    }
+}
+
+@media(max-width: 500px) {
+    .circle-left-small {
+        display: none;
+    }
 }
 
 .circle-left-orange {
@@ -410,6 +495,12 @@ button:hover {
     opacity: 0.7;
 }
 
+@media(max-width: 1000px) {
+    .circle-top-med {
+        display: none;
+    }
+}
+
 .circle-right {
     height: 400px;
     width: 400px;
@@ -419,6 +510,12 @@ button:hover {
     background-color: #0a8df3;
     border-radius: 50%;
     opacity: 0.5;
+}
+
+@media(max-width: 500px) {
+    .circle-right {
+        top: -200px;
+    }
 }
 
 .circle-bottom-right {
@@ -432,6 +529,11 @@ button:hover {
     opacity: 0.5;
 }
 
+@media(max-width: 768px) {
+    .circle-bottom-right {
+        display: none;
+    }
+}
 .circle-mid-left {
     height: 350px;
     width: 350px;
@@ -443,6 +545,12 @@ button:hover {
     opacity: 0.5;
 }
 
+@media(max-width: 500px) {
+    .circle-mid-left {
+        top: 300px;
+    }
+}
+
 .circle-blue-small {
     height: 170px;
     width: 170px;
@@ -452,6 +560,12 @@ button:hover {
     background-color: #0a8df3;
     border-radius: 50%;
     opacity: 0.5;
+}
+
+@media(max-width: 768px) {
+    .circle-blue-small {
+        display: none;
+    }
 }
 
 .circle-bottom {
@@ -474,6 +588,31 @@ button:hover {
     background-color: #85f854;
     border-radius: 50%;
     opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    .circle-center {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-center {
+        height: 400px;
+        width: 400px;
+        top: 0px;
+        right: 150px;
+    }
+}
+
+@media(max-width: 500px) {
+    .circle-center {
+        height: 325px;
+        width: 325px;
+        top: 100px;
+        right: -5px;
+    }
 }
 
 .circle-center-pink {
@@ -513,6 +652,43 @@ button:hover {
     font-weight: bold;
 }
 
+@media(max-width: 1200px) {
+    .circle-center-text {
+        height: 500px;
+        width: 500px;
+        top: -10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .circle-center-text {
+        height: 400px;
+        width: 400px;
+        top: -80px;
+        right: 150px;
+    }
+}
+
+@media(max-width: 500px) {
+    .circle-center-text {
+        height: 250px;
+        width: 300px;
+        top: 50px;
+        right: 5px;
+    }
+}
+
+@media(max-width: 768px) {
+    #circle-text-title {
+        padding-bottom: 0px;
+    }
+}
+
+@media(max-width: 768px) {
+    #circle-text-para {
+        padding: 0px;
+    }
+}
 /** Login Styles */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 

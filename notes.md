@@ -8,7 +8,6 @@
 - vegetarianism detection
 - use executive summaries to makes the front page more informative
 
-
 # **To-Do List(v0):**
 
 ## DONE

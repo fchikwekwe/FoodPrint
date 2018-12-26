@@ -4,14 +4,14 @@
 This app is a carbon tracker for your food intake. If you would like to check out the current, live version of FoodPrint, go to https://know-your-foodprint.herokuapp.com/.
 
 ## Content
-Have you ever wanted to improve your overall carbon output, but were not sure how to do it?
+Have you ever wanted to improve your overall carbon output but were not sure how to do it?
 
 Food is a huge contributor to CO2 emissions and its also a very personal way to help prevent global warming.
 
 This app is a food tracker that tells your your overall carbon output based on what you have eaten.
 
 
-## Are there other ways to learn more about Foodprint?
+## Are there other ways to learn more about FoodPrint?
 Javier and I published a blog series (https://bit.ly/2GaQSa1) about our development process on this app.
 
 If you would like more insight on how the app that we developed works, you can see a live user demo here https://vimeo.com/305850006.

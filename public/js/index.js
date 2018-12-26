@@ -1,20 +1,30 @@
 
 /** Toggle Password */
 function showPassword() {
-  let x = document.getElementById("formPassword");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
+    const x = document.getElementById('formPassword');
+    if (x.type === 'password') {
+        x.type = 'text';
+    } else {
+        x.type = 'password';
+    }
 }
 
 /** Add Up CO2e */
 function addCO2e() {
-let carbonList = document.getElementsbyTagName("dataCarbon");
+const carbonList = document.getElementsbyTagName('dataCarbon');
 let totalCarbon = 0;
     for (i = 0; i < carbonList.length; i++) {
         totalCarbon += carbonList[i];
     }
 document.getElementById('total').innerHTML = total;
+}
+
+/** Display Hamburger Menu */
+function hamburger() {
+    const x = document.getElementById('hamburgerMenu');
+    if (x.className === 'hamburger') {
+        x.className += 'responsive';
+    } else {
+        x.className = 'hamburger';
+    }
 }
