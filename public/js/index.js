@@ -20,7 +20,7 @@ document.getElementById('total').innerHTML = total;
 }
 
 /** Display Hamburger Menu */
-function hamburger() {
+function navHamburger() {
     const x = document.getElementById('hamburgerMenu');
     if (x.className === 'hamburger') {
         x.className += 'responsive';

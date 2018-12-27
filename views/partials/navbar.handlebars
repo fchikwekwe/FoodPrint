@@ -7,13 +7,7 @@
             </li>
         </ul>
     </div>
-    <!-- <div>
-        <ul class="nav navbar-nav">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Other Stuff</a></li>
-            <li><a href="#">Resources</a></li>
-        </ul>
-    </div> -->
+
     <div class="pull-right hamburger" id="hamburgerMenu">
         <ul>
             {{#if currentUser}}
@@ -25,10 +19,10 @@
             <li class="hidden-nav"><a href="#">Why FoodPrint?</a></li>
             <li class="hidden-nav"><a href="#">What is C02e?</a></li>
             <li class="hidden-nav"><a href="#">Other Resources</a></li>
-            <a href="javacript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
         </ul>
     </div>
+    <a id="ham" class="pull-right class fa fa-bars" href="javascript:void(0);" class="icon" onclick="navHamburger()">
+        <i class="fas fa-bars"></i>
+    </a>
   </div>
 </nav>
