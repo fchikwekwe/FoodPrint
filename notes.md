@@ -1,11 +1,13 @@
 
-## **To-Do List(v1):**
+# **To-Do List(v1):**
+## Front-End
 - Add profile button to navbar
 - use executive summaries to makes the front page more informative
+##Back-End
 - make emissions indicators fully functional
 - days need to be associated with graph
 
-## **To-Do List(v2):**
+# **To-Do List(v2):**
 - associate add buttons with the day using id
 - basic graph (0-100 graph)
 - hook up form to the data base for users to search
@@ -13,7 +15,6 @@
 - vegetarianism detection
 
 # **To-Do List(v0):**
-
 ## DONE
 - connect add button to food log form
 - food form template
