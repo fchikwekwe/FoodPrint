@@ -1,7 +1,7 @@
 <div class="profile-page">
 <h2 id="profile-title">Welcome, {{profile.username}}!</h2>
 
-<legend>Foods You've Eaten Today:</legend>
+<legend id="foods-eaten">Foods You've Eaten Today:</legend>
 
     <table class="table">
         <thead>
@@ -48,7 +48,7 @@
         </tbody>
     </table>
 
-    <br>
+    <br class="">
 
     <!-- Add and Delete Buttons -->
     <div id="profile-buttons" class="row">
@@ -60,18 +60,25 @@
         </a>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <form method="POST" action="/profiles/{{profile._id}}?_method=DELETE">
+    <!-- <form method="POST" action="/profiles/{{profile._id}}?_method=DELETE">
         <h3>
             <input id="delete-profile" class="login login-submit" type="submit" value="DELETE PROFILE"></button>
         </h3>
-    </form>
+    </form> -->
+</div>
 
-<fieldset>
+<!-- Decorative Circles -->
+<div class="circle-left-beige"></div>
+<div class="circle-left-pink"></div>
+<div class="circle-left-green"></div>
+<div class="circle-left-blue"></div>
+<div class="circle-left-orange"></div>
+<div class="circle-right-red"></div>
+<div class="circle-right-yellow"></div>
+<div class="circle-right-blue"></div>
+<div class="circle-right-green"></div>
+<div class="circle-right-purple"></div>
+
   <!-- <legend>Today's Meals</legend> -->
 
   <!-- Breakfast -->
@@ -172,17 +179,3 @@
       <a href="#">Edit Food</a>
     </div>
   <hr> -->
-  </fieldset>
-  </div>
-
-  <!-- Decorative Circles -->
-  <div class="circle-left-beige"></div>
-  <div class="circle-left-pink"></div>
-  <div class="circle-left-green"></div>
-  <div class="circle-left-blue"></div>
-  <div class="circle-left-orange"></div>
-  <div class="circle-right-red"></div>
-  <div class="circle-right-yellow"></div>
-  <div class="circle-right-blue"></div>
-  <div class="circle-right-green"></div>
-  <div class="circle-right-purple"></div>

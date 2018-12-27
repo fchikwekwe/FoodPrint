@@ -327,62 +327,10 @@ button:hover {
     z-index: 1;
 }
 
-.circle-left-green {
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    top: 120px;
-    left: 60px;
-    background-color: #b3ffd9;
-    border-radius: 50%;
-    opacity: 0.7;
-    z-index: 1;
-}
-
-.circle-left-pink {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 280px;
-    left: 0px;
-    background-color: #ffcce6;
-    border-radius: 50%;
-    opacity: 0.7;
-}
-
-.circle-left-beige {
-    height: 140px;
-    width: 140px;
-    position: absolute;
-    top: 400px;
-    left: 40px;
-    background-color: #ffe6b3;
-    border-radius: 50%;
-    opacity: 0.7;
-}
-
-.circle-left-blue {
-    height: 160px;
-    width: 160px;
-    position: absolute;
-    top: 550px;
-    left: -20px;
-    background-color: #0a8df3;
-    border-radius: 50%;
-    opacity: 0.7;
-}
-
-
-.circle-left-orange {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #ffc299;
-    border-radius: 50%;
-    opacity: 0.7;
-    z-index: 1;
+@media(max-width: 500px) {
+    .circle-left-orange {
+        display: none;
+    }
 }
 
 .circle-left-green {
@@ -397,6 +345,12 @@ button:hover {
     z-index: 1;
 }
 
+@media(max-width: 500px) {
+    .circle-left-green {
+        display: none;
+    }
+}
+
 .circle-left-pink {
     height: 100px;
     width: 100px;
@@ -406,6 +360,12 @@ button:hover {
     background-color: #ffcce6;
     border-radius: 50%;
     opacity: 0.7;
+}
+
+@media(max-width: 500px) {
+    .circle-left-pink {
+        display: none;
+    }
 }
 
 .circle-left-beige {
@@ -419,6 +379,12 @@ button:hover {
     opacity: 0.7;
 }
 
+@media(max-width: 500px) {
+    .circle-left-beige {
+        display: none;
+    }
+}
+
 .circle-left-blue {
     height: 160px;
     width: 160px;
@@ -430,6 +396,11 @@ button:hover {
     opacity: 0.7;
 }
 
+@media(max-width: 500px) {
+    .circle-left-blue {
+        display: none;
+    }
+}
 
 .circle-right-yellow {
     height: 80px;
@@ -441,6 +412,12 @@ button:hover {
     border-radius: 50%;
     opacity: 0.7;
     z-index: 1;
+}
+
+@media(max-width: 500px) {
+    .circle-right-yellow {
+        display: none;
+    }
 }
 
 .circle-right-purple {
@@ -455,6 +432,12 @@ button:hover {
     z-index: 1;
 }
 
+@media(max-width: 500px) {
+    .circle-right-purple {
+        display: none;
+    }
+}
+
 .circle-right-green {
     height: 100px;
     width: 100px;
@@ -464,6 +447,12 @@ button:hover {
     background-color: #b3ffb3;
     border-radius: 50%;
     opacity: 0.7;
+}
+
+@media(max-width: 500px) {
+    .circle-right-green {
+        display: none;
+    }
 }
 
 .circle-right-blue {
@@ -477,6 +466,12 @@ button:hover {
     opacity: 0.7;
 }
 
+@media(max-width: 500px) {
+    .circle-right-blue {
+        display: none;
+    }
+}
+
 .circle-right-red {
     height: 160px;
     width: 160px;
@@ -486,6 +481,12 @@ button:hover {
     background-color: #ff8080;
     border-radius: 50%;
     opacity: 0.7;
+}
+
+@media(max-width: 500px) {
+    .circle-right-red {
+        display: none;
+    }
 }
 
 .circle-top-med {
@@ -855,10 +856,35 @@ body {
     margin-right: 200px;
 }
 
+@media(max-width: 768px) {
+    .profile-page {
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+}
+
+@media(max-width: 500px) {
+    .profile-page {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+#profile-del {
+    margin-bottom: 50px;
+}
 #profile-title {
   font-weight: 150;
   text-align: center;
   color: #0a8df3;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media(max-width: 1000px) {
+    #foods-eaten {
+        text-align: center;
+    }
 }
 
 .profile-test {
@@ -874,33 +900,119 @@ body {
 }
 
 #profile-buttons {
+    margin-bottom: 50px;
     position: absolute;
-    left: 67%;
+    left: 60%;
+}
+
+@media(max-width: 1000px) {
+    #profile-buttons {
+        left: 40%
+    }
+}
+
+@media(max-width: 768px) {
+    #profile-buttons {
+        left: 37%
+    }
+}
+
+@media(max-width: 500px) {
+    #profile-buttons {
+        left: 25%
+    }
 }
 
 /** Food Index */
 .food-index {
     font-family: 'Montserrat', sans-serif;
     margin-left: 250px;
-    margin-right: 200px;
+    margin-right: 250px;
+}
+
+@media(max-width: 768px) {
+    .food-index {
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+}
+
+@media(max-width: 500px) {
+    .food-index {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 .food-index input {
     width: 100px;
 }
 
-#food-select {
+#add-food {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#edit-food {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#select-edit {
+    margin-left: 10px;
+}
+
+.food-select {
     height: 35px;
-    width: 300px;
+    width: 200px;
     position: absolute;
     left: 40%;
 }
 
-#food-submit {
+@media(max-width: 1000px) {
+    .food-select {
+        left: 38%;
+    }
+}
+
+@media(max-width: 768px) {
+    .food-select {
+        left: 33%;
+    }
+}
+
+@media(max-width: 500px) {
+    .food-select {
+        left: 18%;
+    }
+}
+
+.food-submit {
     margin-left: 10px;
     margin-right: 10px;
+    padding-right: 30px;
     position: absolute;
-    left: 47.5%;
+    left: 39%;
+}
+
+@media(max-width: 1000px) {
+    .food-submit {
+        left: 36.5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .food-submit {
+        left: 31%;
+    }
+}
+
+@media(max-width: 500px) {
+    .food-submit {
+        margin-left: 0;
+        margin-right: 0;
+        left: 17%;
+    }
 }
 
 .divider {

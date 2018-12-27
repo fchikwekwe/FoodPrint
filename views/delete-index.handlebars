@@ -1,7 +1,7 @@
 <div class="food-index">
-    <h2>Edit Food Items</h2>
+    <h2 id="edit-food">Edit Food Items</h2>
 
-    <form method="POST" action="/profiles/{{profile.id}}/delete?_method=PUT">
+    <form method="POST" action="/profiles/{{profile.id}}/delete?_method=PUT" id="select-edit" >
     <!-- Search feature coming soon
     <div class="input-group">
     <input type="text" class="form-control" id="search" type="search" name="search" placeholder="Look up food here">
@@ -15,7 +15,7 @@
         <h3 class="title-highlight">Select the food you want to delete!</h3>
         <br>
         <br>
-        <select id="food-select" name="foodSelect">
+        <select class="food-select" name="foodSelect">
                 {{#each profile.foods}}
                 <option value="{{this._id}}">
                     {{this.name}}, {{this.description}}, {{this.CO2e}}
@@ -30,11 +30,9 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <div class="container-fluid pull-right">
+        <div class="container-fluid">
             <!-- Submit and Cancel Buttons -->
-            <div id="food-submit" class="row">
+            <div class="food-submit" class="row">
                 <a href="/profiles/{{profile.id}}">
                     <input class="login login-submit" value="Cancel">
                 </a>

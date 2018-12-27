@@ -1,12 +1,16 @@
+
 ## **To-Do List(v1):**
+- Add profile button to navbar
+- use executive summaries to makes the front page more informative
+- make emissions indicators fully functional
+- days need to be associated with graph
+
+## **To-Do List(v2):**
 - associate add buttons with the day using id
 - basic graph (0-100 graph)
-- days need to be associated with graph
-- hook up form to the data base for users to search (faith)
-- make emissions indicators fully functional
+- hook up form to the data base for users to search
 - write out an ERD (paper or whiteboard)
 - vegetarianism detection
-- use executive summaries to makes the front page more informative
 
 # **To-Do List(v0):**
 

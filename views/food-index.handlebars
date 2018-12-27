@@ -1,5 +1,5 @@
 <div class="food-index">
-    <h2>Add Food</h2>
+    <h2 id="add-food">Add Food</h2>
 
     <form action="/profiles/{{profile._id}}?_method=PUT" method="POST">
         <div class="input-group">
@@ -15,7 +15,7 @@
         <h3 class="title-highlight">Select your food below!</h3>
         <br>
         <br>
-        <select id="food-select" name="foodSelect">
+        <select class="food-select" name="foodSelect">
                 {{#each foods}}
                 <option value="{{this._id}}">
                     {{this.name}}, {{this.description}}, {{this.CO2e}}
@@ -32,9 +32,9 @@
         <br>
         <br>
         <br>
-        <div class="container-fluid pull-right">
+        <div class="container-fluid">
             <!-- Submit and Cancel Buttons -->
-            <div id="food-submit" class="row">
+            <div class="food-submit" class="row">
                 <a href="/profiles/{{profile.id}}">
                     <input class="login login-submit" value="Cancel">
                 </a>
