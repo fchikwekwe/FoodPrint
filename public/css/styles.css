@@ -499,6 +499,23 @@ button:hover {
     opacity: 0.7;
 }
 
+.circle-top-blue {
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    top: -110px;
+    right: 220px;
+    background-color: #0a8df3;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+@media(max-width: 500px) {
+    .circle-top-blue {
+        right: 80px;
+    }
+}
+
 @media(max-width: 1000px) {
     .circle-top-med {
         display: none;
@@ -533,7 +550,7 @@ button:hover {
     opacity: 0.5;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
     .circle-bottom-right {
         display: none;
     }
@@ -581,6 +598,23 @@ button:hover {
     background-color: #0a8df3;
     border-radius: 50%;
     opacity: 0.5;
+}
+
+.circle-bottom-blue {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: -30px;
+    left: 350px;
+    background-color: #0a8df3;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+@media(max-width: 500px) {
+    .circle-bottom-blue {
+        left: 120px;
+    }
 }
 
 .circle-center {
@@ -641,6 +675,20 @@ button:hover {
     opacity: 0.5;
 }
 
+@media(max-width: 768px) {
+    .circle-center-purple {
+        top: 0px;
+        right: 80px;
+    }
+}
+
+@media(max-width: 500px) {
+    .circle-center-purple {
+        top: 0px;
+        right: -10px;
+    }
+}
+
 .circle-center-text {
     height: 600px;
     width: 600px;
@@ -668,7 +716,7 @@ button:hover {
     .circle-center-text {
         height: 400px;
         width: 400px;
-        top: -80px;
+        top: -60px;
         right: 150px;
     }
 }
@@ -677,7 +725,7 @@ button:hover {
     .circle-center-text {
         height: 250px;
         width: 300px;
-        top: 50px;
+        top: 30px;
         right: 5px;
     }
 }
