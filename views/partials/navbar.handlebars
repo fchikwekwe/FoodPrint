@@ -8,29 +8,43 @@
         </ul>
     </div>
 
-    <label for="toggle-1" class="toggle-menu">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </label>
     <div id="menuToggle"class="main-menu pull-right">
-        <!-- Checkbox to act as click receiver -->
-        <input type="checkbox" id="toggle-1"/>
 
         <ul>
+            <!-- Only display logout on nav if current user -->
             {{#if currentUser}}
-            <li><a href="/logout">Logout</a></li>
+            <li class="not-symbols"><a href="/logout">Logout</a></li>
+            <li class="symbols">
+                <a href="/logout">
+                    <i alt="logout"class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+            <!-- Only display login/sign-up on nav if current user -->
             {{else}}
-            <li><a href="/login">Login</a></li>
-            <li><a href="/sign-up">Sign Up</a></li>
+            <li class="not-symbols"><a href="/login">Login</a></li>
+            <li class="symbols">
+                <a href="/login">
+                    <i class="fas fa-users"></i>
+                </a>
+            </li>
+
+            <li class="not-symbols"><a href="/sign-up">Sign Up</a></li>
+            <li class="symbols">
+                <a href="/sign-up"><i class="fas fa-user-plus"></i></a>
+            </li>
             {{/if}}
-            <li class="hidden-nav"><a href="#">Why FoodPrint?</a></li>
-            <li class="hidden-nav"><a href="#">What is C02e?</a></li>
-            <li class="hidden-nav"><a href="#">Other Resources</a></li>
+            
+            <li class="symbols">
+                <a href="#"><i class="fas fa-utensils"></i></a>
+            </li>
+            <li class="symbols">
+                <a href="#"><i class="fas fa-tree"></i></a>
+            </li>
+            <li class="symbols">
+                <a href="#"><i class="fas fa-thumbtack"></i></a>
+            </li>
+
         </ul>
     </div>
-    <a href="#main-menu-toggle" class="backdrop" hidden></a>
   </div>
 </nav>
