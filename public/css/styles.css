@@ -92,10 +92,6 @@ nav ul li.symbols a {
     }
 }
 
-input[type=checkbox], label {
-    display: none;
-}
-
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
