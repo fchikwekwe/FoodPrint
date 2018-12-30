@@ -52,29 +52,44 @@ nav {
 nav ul {
     list-style: none;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 nav ul li {
     display: inline-block;
 }
 
+nav ul li figcaption {
+    font-size: 8px;
+}
 nav ul li a {
     display: block;
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-decoration: none;
     color: #0a8df3;
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-nav ul li.symbols a {
-    padding-top: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
+@media(min-width: 500px) {
+    nav ul li.symbols a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-@media(min-width: 769px) {
+nav ul li.not-symbols a {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(min-width: 1021px) {
     nav ul li.not-symbols a {
         display: block;
     }
@@ -83,7 +98,7 @@ nav ul li.symbols a {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1020px) {
     nav ul li.not-symbols a {
         display: none;
     }

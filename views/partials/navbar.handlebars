@@ -1,5 +1,5 @@
 <nav id="navbar-main" class="navbar navbar-light fill" role="navigation">
-  <div class="whole-menu container-fluid">
+  <div class="whole-menu">
     <div class="navbar-header pull-left">
         <ul>
             <li>
@@ -15,33 +15,68 @@
             {{#if currentUser}}
             <li class="not-symbols"><a href="/logout">Logout</a></li>
             <li class="symbols">
-                <a href="/logout">
-                    <i alt="logout"class="fas fa-sign-out-alt"></i>
-                </a>
+                <figure>
+                    <a href="/logout">
+                        <i alt="logout"class="fas fa-sign-out-alt"></i>
+                        <figcaption>Logout</figcaption>
+                    </a>
+                </figure>
             </li>
             <!-- Only display login/sign-up on nav if current user -->
             {{else}}
+
             <li class="not-symbols"><a href="/login">Login</a></li>
             <li class="symbols">
-                <a href="/login">
-                    <i class="fas fa-users"></i>
-                </a>
+                <figure>
+                    <a href="/login">
+                        <i class="fas fa-users"></i>
+                        <figcaption>Login</figcaption>
+                    </a>
+                </figure>
             </li>
 
             <li class="not-symbols"><a href="/sign-up">Sign Up</a></li>
             <li class="symbols">
-                <a href="/sign-up"><i class="fas fa-user-plus"></i></a>
+                <figure>
+                    <a href="/sign-up">
+                        <i class="fas fa-user-plus"></i>
+                        <figcaption>Sign-up</figcaption>
+                    </a>
+                </figure>
             </li>
             {{/if}}
-            
+
+            <li class="not-symbols"><a href="/whyfoodprint">Why FoodPrint?</a></li>
             <li class="symbols">
-                <a href="#"><i class="fas fa-utensils"></i></a>
+                <figure>
+                    <a href="/whyfoodprint">
+                        <i class="fas fa-utensils"></i>
+                        <figcaption>Why</figcaption>
+                        <figcaption>FoodPrint?</figcaption>
+                    </a>
+                </figure>
+
             </li>
+
+            <li class="not-symbols"><a href="/whatCO2e">What is CO2e?</a></li>
             <li class="symbols">
-                <a href="#"><i class="fas fa-tree"></i></a>
+                <figure>
+                    <a href="/whatCO2e">
+                        <i class="fas fa-tree"></i>
+                        <figcaption>What is</figcaption>
+                        <figcaption>CO2e?</figcaption>
+                    </a>
+                </figure>
             </li>
+
+            <li class="not-symbols"><a href="/resources">Resources</a></li>
             <li class="symbols">
-                <a href="#"><i class="fas fa-thumbtack"></i></a>
+                <figure>
+                    <a href="/resources">
+                        <i class="fas fa-thumbtack"></i>
+                        <figcaption>Resources</figcaption>
+                    </a>
+                </figure>
             </li>
 
         </ul>
