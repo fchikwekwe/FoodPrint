@@ -63,8 +63,16 @@ nav ul li {
 nav ul li figcaption {
     font-size: 8px;
 }
+
+nav ul li p {
+    display: none;
+    padding-top: 15px;
+    color: #0a8df3;
+    font-weight: 800;
+}
+
 nav ul li a {
-    display: block;
+    display: none;
     padding-top: 15px;
     padding-left: 2px;
     padding-right: 2px;
@@ -75,34 +83,33 @@ nav ul li a {
     margin: 0 5px;
 }
 
-@media(min-width: 500px) {
-    nav ul li.symbols a {
-        padding-left: 10px;
-        padding-right: 10px;
+nav ul li.not-symbols a {
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul li a.navbar-brand {
+        text-align: center;
     }
 }
 
-nav ul li.not-symbols a {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-@media(min-width: 1021px) {
-    nav ul li.not-symbols a {
+@media(min-width: 1000px) {
+    nav ul li.full-nav a {
         display: block;
     }
-    nav ul li.symbols a {
-        display: none;
+}
+
+@media(min-width: 768px) and (max-width: 999px) {
+    nav ul li.med-nav a {
+        display: block;
+    }
+    nav ul li.med-nav p {
+        display: block;
     }
 }
 
-@media(max-width: 1020px) {
-    nav ul li.not-symbols a {
-        display: none;
-    }
-    nav ul li.symbols a {
+@media(max-width: 767px) {
+    nav ul li.mini-nav a {
         display: block;
     }
 }
@@ -761,9 +768,9 @@ body {
 
 .login-card {
   padding: 40px;
-  width: 320px;
+  width: 270px;
   background-color: #F7F7F7;
-  margin: 0 auto 10px;
+  margin: 25px auto 10px;
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -819,7 +826,7 @@ body {
 .login-submit {
   border: 0px;
   color: #fff;
-  left: 170px;
+  left: 120px;
   text-shadow: 0 1px rgba(0,0,0,0.1);
   background-color: #0a8df3;
 }
@@ -848,9 +855,6 @@ body {
   width: 100%;
   text-align: center;
   font-size: 12px;
-}
-.login-card {
-    margin-top: 4em;
 }
 
 /** Profile Styles */

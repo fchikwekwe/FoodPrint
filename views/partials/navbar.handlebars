@@ -1,20 +1,20 @@
 <nav id="navbar-main" class="navbar navbar-light fill" role="navigation">
   <div class="whole-menu">
-    <div class="navbar-header pull-left">
+    <div class="navbar-header">
         <ul>
-            <li>
+            <li class="full-nav med-nav mini-nav">
                 <a class="navbar-brand" href="/">F o o d P r i n t</a>
             </li>
         </ul>
     </div>
 
-    <div id="menuToggle"class="main-menu pull-right">
+    <div id="options-menu"class="main-menu">
 
         <ul>
             <!-- Only display logout on nav if current user -->
             {{#if currentUser}}
-            <li class="not-symbols"><a href="/logout">Logout</a></li>
-            <li class="symbols">
+            <li class="full-nav med-nav"><a href="/logout">Logout</a></li>
+            <li class="mini-nav symbols">
                 <figure>
                     <a href="/logout">
                         <i alt="logout"class="fas fa-sign-out-alt"></i>
@@ -25,8 +25,8 @@
             <!-- Only display login/sign-up on nav if current user -->
             {{else}}
 
-            <li class="not-symbols"><a href="/login">Login</a></li>
-            <li class="symbols">
+            <li class="full-nav med-nav"><a href="/login">Login</a></li>
+            <li class="mini-nav symbols">
                 <figure>
                     <a href="/login">
                         <i class="fas fa-users"></i>
@@ -35,8 +35,8 @@
                 </figure>
             </li>
 
-            <li class="not-symbols"><a href="/sign-up">Sign Up</a></li>
-            <li class="symbols">
+            <li class="full-nav med-nav"><a href="/sign-up">Sign Up</a></li>
+            <li class="mini-nav symbols">
                 <figure>
                     <a href="/sign-up">
                         <i class="fas fa-user-plus"></i>
@@ -46,8 +46,10 @@
             </li>
             {{/if}}
 
-            <li class="not-symbols"><a href="/whyfoodprint">Why FoodPrint?</a></li>
-            <li class="symbols">
+            <li class="med-nav"><p> | </p></li>
+
+            <li class="full-nav"><a href="/whyfoodprint">Why FoodPrint?</a></li>
+            <li class="med-nav mini-nav symbols">
                 <figure>
                     <a href="/whyfoodprint">
                         <i class="fas fa-utensils"></i>
@@ -58,8 +60,8 @@
 
             </li>
 
-            <li class="not-symbols"><a href="/whatCO2e">What is CO2e?</a></li>
-            <li class="symbols">
+            <li class="full-nav"><a href="/whatCO2e">What is CO2e?</a></li>
+            <li class="med-nav mini-nav symbols">
                 <figure>
                     <a href="/whatCO2e">
                         <i class="fas fa-tree"></i>
@@ -69,8 +71,8 @@
                 </figure>
             </li>
 
-            <li class="not-symbols"><a href="/resources">Resources</a></li>
-            <li class="symbols">
+            <li class="full-nav"><a href="/resources">More Resources</a></li>
+            <li class="med-nav mini-nav symbols">
                 <figure>
                     <a href="/resources">
                         <i class="fas fa-thumbtack"></i>
