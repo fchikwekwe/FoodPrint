@@ -2,6 +2,7 @@
 # **To-Do List(v1):**
 ## Front-End
 - Add profile button to navbar
+- Add footer 
 - use executive summaries to makes the front page more informative
 ##Back-End
 - make emissions indicators fully functional
