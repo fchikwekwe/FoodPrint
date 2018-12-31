@@ -33,10 +33,6 @@ h2 {
     text-align: center;
 }
 
-.hidden-nav {
-    display: none;
-}
-
 section {
     height: 100px;
 }
@@ -52,6 +48,7 @@ nav {
 nav ul {
     list-style: none;
     text-align: center;
+
     padding-left: 0;
     padding-right: 0;
 }
@@ -182,21 +179,89 @@ nav.fill ul li a:hover:after {
 }
 
 
-/* Navbar Fill Keyframes */
+/* Fill Keyframes */
 @-webkit-keyframes fill {
     0% {
         width: 0%;
         height: 1px;
+        text-align: center;
     }
     50% {
         width: 100%;
         height: 1px;
+        text-align: center;
     }
     100% {
         width: 100%;
         height: 100%;
+        text-align: center;
         background: #0a8df3;
     }
+}
+
+/** Footer styles */
+
+footer {
+    display: block;
+    border-radius: 4px;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: -5px -5px 40px #54b1f8;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+@media(max-width: 767px) {
+    footer {
+        width: 75%;
+        height: 100%;
+    }
+}
+
+footer div.whole-menu {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer div.whole-menu ul li a {
+    text-transform: uppercase;
+}
+
+footer div i.fa-heart {
+    color: red;
+}
+
+footer div div.love-in-SF {
+    text-transform: none;
+    text-align: center;
+    color: #0a8df3;
+}
+
+footer div.middle-footer {
+    color: #0a8df3;
+    text-align: center;
+}
+
+footer div ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 7px;
+}
+
+footer div ul li {
+    display: block;
+}
+
+footer div ul li a {
+    display: block;
+    padding: 5px 15px 0;
+    text-transform: none;
+    text-decoration: none;
+    color: #0a8df3;
+    font-weight: 800;
+    margin: 0 5px;
 }
 
 /** Main Styles */
@@ -573,9 +638,16 @@ button:hover {
 
 @media(max-width: 1000px) {
     .circle-bottom-right {
+        right: 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    .circle-bottom-right {
         display: none;
     }
 }
+
 .circle-mid-left {
     height: 350px;
     width: 350px;
@@ -621,6 +693,12 @@ button:hover {
     opacity: 0.5;
 }
 
+@media(max-width: 1000px) {
+    .circle-bottom {
+        display: none;
+    }
+}
+
 .circle-bottom-blue {
     height: 250px;
     width: 250px;
@@ -649,7 +727,7 @@ button:hover {
     opacity: 0.5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .circle-center {
         height: 500px;
         width: 500px;
@@ -725,7 +803,7 @@ button:hover {
     font-weight: bold;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1000px) {
     .circle-center-text {
         height: 500px;
         width: 500px;
