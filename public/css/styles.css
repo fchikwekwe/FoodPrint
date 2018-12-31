@@ -247,7 +247,7 @@ footer div.middle-footer {
 footer div ul {
     list-style: none;
     text-align: center;
-    padding-inline-start: 7px;
+    padding-inline-start: 0;
 }
 
 footer div ul li {
