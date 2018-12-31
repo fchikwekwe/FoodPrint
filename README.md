@@ -8,7 +8,7 @@ Have you ever wanted to improve your overall carbon output but were not sure how
 
 Food is a huge contributor to CO2 emissions and its also a very personal way to help prevent global warming.
 
-This app is a food tracker that tells your your overall carbon output based on what you have eaten.
+This app is a food tracker that tells you your overall carbon output based on what you have eaten.
 
 
 ## Are there other ways to learn more about FoodPrint?
