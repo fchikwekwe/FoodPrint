@@ -50,6 +50,7 @@ app.use(checkAuth);
 require('./controllers/foods.js')(app);
 require('./controllers/profiles.js')(app);
 require('./controllers/auth.js')(app);
+require('./controllers/about.js')(app);
 
 /** Port listener */
 app.listen(PORT, () => {
