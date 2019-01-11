@@ -15,6 +15,7 @@
 - hook up form to the data base for users to search
 - write out an ERD (paper or whiteboard)
 - vegetarianism detection
+- movement to the homepage bubbles (also a hover effect; maybe they stop moving when you hover)
 
 # **To-Do List(v0):**
 ## DONE
