@@ -18,13 +18,3 @@ let totalCarbon = 0;
     }
 document.getElementById('total').innerHTML = total;
 }
-
-/** Display Hamburger Menu */
-function navHamburger() {
-    const x = document.getElementById('hamburgerMenu');
-    if (x.className === 'hamburger') {
-        x.className += 'responsive';
-    } else {
-        x.className = 'hamburger';
-    }
-}
