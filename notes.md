@@ -16,6 +16,7 @@
 - write out an ERD (paper or whiteboard)
 - vegetarianism detection
 - movement to the homepage bubbles (also a hover effect; maybe they stop moving when you hover)
+- open external links in new tab (perhaps with hover icon to show that its an external site)
 
 # **To-Do List(v0):**
 ## DONE
