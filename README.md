@@ -1,5 +1,10 @@
 # Environment Tracker App
 
+## Features Coming Soon!
+- Simple Search and/or Full Text Search
+- Sending Email (upon sign-up)
+- Uploading Files (for navbar user profile)
+
 ## What is FoodPrint?
 This app is a carbon tracker for your food intake. If you would like to check out the current, live version of FoodPrint, go to https://know-your-foodprint.herokuapp.com/.
 
